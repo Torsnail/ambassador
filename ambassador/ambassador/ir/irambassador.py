@@ -21,6 +21,7 @@ class IRAmbassador (IRResource):
     AModTransparentKeys: ClassVar = [
         'admin_port',
         'auth_enabled',
+        'circuit_breakers',
         'default_label_domain',
         'default_labels',
         'diag_port',
@@ -28,16 +29,15 @@ class IRAmbassador (IRResource):
         'enable_ipv6',
         'enable_ipv4',
         'liveness_probe',
+        'load_balancer',
         'readiness_probe',
+        'server_name',
         'service_port',
         'statsd',
         'use_proxy_proto',
         'use_remote_address',
         'x_forwarded_proto_redirect',
-        'load_balancer',
-        'xff_num_trusted_hops',
-        'server_name',
-        'circuit_breakers'
+        'xff_num_trusted_hops'
     ]
 
     service_port: int
